@@ -6,7 +6,7 @@ export class Database {
   #database = {}
 
   constructor() {
-    // tenta ler o arquivo, se conseguir salva em database ={} se n cria o arguiqov/db.json
+    // tenta ler o arquivo, se conseguir salva em database ={} se n cria o arguiqo db.json
     fs.readFile(databasePath, 'utf8')
       .then(data => {
         this.#database = JSON.parse(data)
